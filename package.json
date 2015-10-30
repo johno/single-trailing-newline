@@ -14,7 +14,15 @@
     "type": "git",
     "url": "https://github.com/johnotander/single-trailing-newline.git"
   },
-  "keywords": [],
+  "keywords": [
+    "newline",
+    "trailing",
+    "single",
+    "cf",
+    "lf",
+    "linebreak",
+    "eol"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/johnotander/single-trailing-newline/issues"

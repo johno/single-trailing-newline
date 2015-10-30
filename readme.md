@@ -13,7 +13,10 @@ npm install --save single-trailing-newline
 ```javascript
 var singleTrailingNewline = require('single-trailing-newline')
 
-singleTrailingNewline()  // => true
+singleTrailingNewline('foo\nbar')  // => 'foo\nbar\n'
+singleTrailingNewline('foo\nbar\n\n')  // => 'foo\nbar\n'
+singleTrailingNewline('foo\r\nbar')  // => 'foo\r\nbar\r\n'
+singleTrailingNewline('foo\r\nbar\n\n\n\n')  // => 'foo\r\nbar\n'
 ```
 
 ## License
