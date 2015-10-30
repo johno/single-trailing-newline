@@ -14,7 +14,7 @@ const carriageReturnStrings = [
   'foo\r\nbar\r\n',
   'foo\r\nbar\r\n\r\n',
   'foo\r\nbar\n\r\n',
-  'foo\nbar\r\n\r\n'
+  'foo\r\nbar\r\n\r\n'
 ]
 
 test('single-trailing-newline detects \\n strings and ensures only one trailing newline', t => {
@@ -22,5 +22,13 @@ test('single-trailing-newline detects \\n strings and ensures only one trailing 
 
   strings.forEach(str => {
     t.same(singleTrailingNewline(str), 'foo\nbar\n')
+  })
+})
+
+test('single-trailing-newline detects \\r\\n strings and ensures only one trailing newline', t => {
+  t.plan(carriageReturnStrings.length)
+
+  carriageReturnStrings.forEach(str => {
+    t.same(singleTrailingNewline(str), 'foo\r\nbar\r\n')
   })
 })
