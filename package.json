@@ -2,7 +2,7 @@
   "name": "single-trailing-newline",
   "description": "Ensure a string has a single trailing newline based off it's dominant newline character.",
   "author": "John Otander",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "files": [
     "index.js"
